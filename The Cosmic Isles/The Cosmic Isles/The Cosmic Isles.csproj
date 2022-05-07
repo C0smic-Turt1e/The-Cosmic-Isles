@@ -83,5 +83,11 @@
   <ItemGroup>
     <None Include="Resources\background.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cosmic isles logo with background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\summer cosmic.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,5 +16,15 @@ namespace The_Cosmic_Isles
         {
             InitializeComponent();
         }
+
+        private void btnNewGame_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

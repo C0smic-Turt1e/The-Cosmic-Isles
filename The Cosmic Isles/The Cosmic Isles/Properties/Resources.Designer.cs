@@ -69,5 +69,25 @@ namespace The_Cosmic_Isles.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cosmic_isles_logo_with_background {
+            get {
+                object obj = ResourceManager.GetObject("cosmic isles logo with background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap summer_cosmic {
+            get {
+                object obj = ResourceManager.GetObject("summer cosmic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
