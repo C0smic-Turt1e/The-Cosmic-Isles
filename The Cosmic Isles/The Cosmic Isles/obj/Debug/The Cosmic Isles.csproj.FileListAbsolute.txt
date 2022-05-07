@@ -1,0 +1,10 @@
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\bin\Debug\The Cosmic Isles.exe.config
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\bin\Debug\The Cosmic Isles.exe
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\bin\Debug\The Cosmic Isles.pdb
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The Cosmic Isles.csprojAssemblyReference.cache
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The_Cosmic_Isles.Form1.resources
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The_Cosmic_Isles.Properties.Resources.resources
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The Cosmic Isles.csproj.GenerateResource.cache
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The Cosmic Isles.csproj.CoreCompileInputs.cache
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The Cosmic Isles.exe
+C:\Users\2023palmerdl\source\repos\The Cosmic Isles\The Cosmic Isles\obj\Debug\The Cosmic Isles.pdb
