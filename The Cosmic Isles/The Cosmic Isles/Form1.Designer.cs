@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.picTitle = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picCosmicTitle = new System.Windows.Forms.PictureBox();
             this.btnNewGame = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCosmicTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // picTitle
@@ -48,16 +48,16 @@
             this.picTitle.TabIndex = 0;
             this.picTitle.TabStop = false;
             // 
-            // pictureBox1
+            // picCosmicTitle
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::The_Cosmic_Isles.Properties.Resources.summer_cosmic;
-            this.pictureBox1.Location = new System.Drawing.Point(747, 40);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(674, 657);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picCosmicTitle.BackColor = System.Drawing.Color.Transparent;
+            this.picCosmicTitle.Image = global::The_Cosmic_Isles.Properties.Resources.summer_cosmic;
+            this.picCosmicTitle.Location = new System.Drawing.Point(747, 40);
+            this.picCosmicTitle.Name = "picCosmicTitle";
+            this.picCosmicTitle.Size = new System.Drawing.Size(674, 657);
+            this.picCosmicTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCosmicTitle.TabIndex = 1;
+            this.picCosmicTitle.TabStop = false;
             // 
             // btnNewGame
             // 
@@ -116,18 +116,19 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::The_Cosmic_Isles.Properties.Resources.background;
+            this.BackgroundImage = global::The_Cosmic_Isles.Properties.Resources.title_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1320, 689);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.btnNewGame);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picCosmicTitle);
             this.Controls.Add(this.picTitle);
             this.Name = "Form1";
             this.Text = "The Cosmic Isles";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picTitle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCosmicTitle)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -135,7 +136,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picTitle;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picCosmicTitle;
         private System.Windows.Forms.Button btnNewGame;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.Button btnExit;

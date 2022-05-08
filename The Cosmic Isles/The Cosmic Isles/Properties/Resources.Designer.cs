@@ -63,16 +63,6 @@ namespace The_Cosmic_Isles.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap background {
-            get {
-                object obj = ResourceManager.GetObject("background", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap cosmic_isles_logo_with_background {
             get {
                 object obj = ResourceManager.GetObject("cosmic isles logo with background", resourceCulture);
@@ -83,9 +73,38 @@ namespace The_Cosmic_Isles.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lobby {
+            get {
+                object obj = ResourceManager.GetObject("lobby", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap summer_cosmic {
             get {
                 object obj = ResourceManager.GetObject("summer cosmic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Summer_in_the_Cosmos {
+            get {
+                return ResourceManager.GetStream("Summer in the Cosmos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap title_background {
+            get {
+                object obj = ResourceManager.GetObject("title_background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

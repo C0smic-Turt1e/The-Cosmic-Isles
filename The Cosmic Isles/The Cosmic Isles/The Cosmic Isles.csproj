@@ -89,5 +89,17 @@
   <ItemGroup>
     <None Include="Resources\summer cosmic.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Summertime.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Summertime %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\title background.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lobby.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
