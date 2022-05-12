@@ -67,7 +67,7 @@
             this.btnNewGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnNewGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnNewGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewGame.Font = new System.Drawing.Font("Hotel Black", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewGame.ForeColor = System.Drawing.Color.Magenta;
             this.btnNewGame.Location = new System.Drawing.Point(193, 456);
             this.btnNewGame.Name = "btnNewGame";
@@ -85,7 +85,7 @@
             this.btnSettings.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnSettings.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSettings.Font = new System.Drawing.Font("Hotel Black", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.Magenta;
             this.btnSettings.Location = new System.Drawing.Point(193, 526);
             this.btnSettings.Name = "btnSettings";
@@ -102,7 +102,7 @@
             this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Hotel Black", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.Magenta;
             this.btnExit.Location = new System.Drawing.Point(193, 596);
             this.btnExit.Name = "btnExit";
