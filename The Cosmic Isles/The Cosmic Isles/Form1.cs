@@ -24,6 +24,13 @@ namespace The_Cosmic_Isles
         //dialogue character name string
         string characterName;
 
+        //player name input
+        string playerName;
+
+        //bools for dialogue questions
+        bool option1Selected = false;
+        bool option2Selected = false;
+
         public Form1()
         {
             InitializeComponent();
@@ -63,6 +70,19 @@ namespace The_Cosmic_Isles
                 item.Visible = true;
             }
             backgroundDecider(newScreen);
+
+            if (newScreen != titleScreen)
+            {
+                showInventoryBorder();
+                picLeftScreen.Visible = true;
+                picRIghtScreen.Visible = true;
+            }
+            else
+            {
+                hideInventoryBorder();
+                picLeftScreen.Visible = false;
+                picRIghtScreen.Visible = false;
+            }
         } //end showScreen method
 
         private void hideScreen(List<Control> oldScreen)
@@ -87,17 +107,28 @@ namespace The_Cosmic_Isles
             }
         } //end backgroundDecider method
 
-        private void dialogueScreen (string characterName, List<Control> currentScreen)
+        private void dialogueScreen (string characterName, List<Control> currentScreen, PictureBox picCharacter)
         {
             picDialogueCharacter.Visible = true;
+            picDialogueCharacter.BringToFront();
             lblDialogue.Visible = true;
-            if (characterName == "Botto")
-            {
-                if (currentScreen == lobbyScreen)
-                {
-                    lblDialogue.Text = "He He He Ha! I am Botto!";
-                }
-            }
+            lblDialogue.BringToFront();
+            btnOption1.Visible = true;
+            btnOption2.Visible = true;
+            btnLeaveDialogue.Visible = true;
+
+            hideInventoryBorder();
+        }
+
+        private void hideDialogue()
+        {
+            picDialogueCharacter.Visible = false;
+            lblDialogue.Visible = false;
+            btnOption1.Visible = false;
+            btnOption2.Visible = false;
+            btnLeaveDialogue.Visible = false;
+
+            showInventoryBorder();
         }
 
         private void btnNewGame_Click_1(object sender, EventArgs e)
@@ -111,7 +142,133 @@ namespace The_Cosmic_Isles
         private void picBotto_Click(object sender, EventArgs e)
         {
             characterName = "Botto";
-            dialogueScreen(characterName, lobbyScreen);
+            dialogueScreen(characterName, lobbyScreen, picBotto);
+            bottoDialogue();
+        }
+
+        private void btnOption1_Click(object sender, EventArgs e)
+        {
+            option1Selected = true;
+            option2Selected = false;
+            if (characterName == "Botto")
+            {
+                bottoDialogue();
+            }
+        }
+
+        private void btnOption2_Click(object sender, EventArgs e)
+        {
+            option1Selected = false;
+            option2Selected = true;
+            if (characterName == "Botto")
+            {
+                bottoDialogue();
+            }
+        }
+
+        private void btnLeaveDialogue_Click(object sender, EventArgs e)
+        {
+            hideDialogue();
+            showInventoryBorder();
+        }
+
+        private void bottoDialogue()
+        {
+            if (option1Selected == true & btnOption1.Text == "OK")
+            {
+                lblDialogue.Text = "Enjoy your stay!";
+                btnOption1.Visible = false;
+                btnOption2.Visible = false;
+            }
+
+            if (btnOption1.Text == "Yes")
+            {
+                lblDialogue.Text = "I am Botto! I run this resort using my bot powers! Can I get your name?";
+                if (option1Selected == true)
+                {
+                    do
+                    {
+                        playerName = Microsoft.VisualBasic.Interaction.InputBox("Input Name!", "Botto wants your name!");
+                    }
+                    while (Name.Trim() == "");
+
+                    lblPlayerName.Text = playerName;
+
+                    lblDialogue.Text = "Welcome to The Cosmic Isles, " + playerName.ToUpper() + "! If you go up to the stairs to the right, you will find your room! There is a complementary outfit waiting for you!";
+                    btnOption1.Text = "OK";
+                    btnOption2.Visible = false;
+                }
+                else if (option2Selected == true)
+                {
+                    lblDialogue.Text = "You silly goose, I need your name! Otherwise you can't stay at the resort!";
+                }
+            }
+        }
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            if (grpTest.Visible == false)
+            {
+                grpTest.Visible = true;
+                grpTest.BringToFront();
+            }
+            else
+            {
+                grpTest.Visible = false;
+            }
+        }
+
+        private void btnTestMenu_Click(object sender, EventArgs e)
+        {
+            hideAll();
+            showScreen(titleScreen);
+        }
+
+        private void btnTestLobby_Click(object sender, EventArgs e)
+        {
+            hideAll();
+            showScreen(lobbyScreen);
+        }
+
+        private void hideAll()
+        {
+            hideScreen(titleScreen);
+            hideScreen(lobbyScreen);
+        }
+
+        private void showInventoryBorder()
+        {
+            picInventoryBorder.Visible = true;
+            picInventoryBorder.BringToFront();
+            picPlayer.Visible = true;
+            picPlayer.BringToFront();
+            lblPlayerName.Visible = true;
+            lblPlayerName.BringToFront();
+            btnSaveTitle.Visible = true;
+            btnSaveTitle.BringToFront();
+            btnSaveExit.Visible = true;
+            btnSaveExit.BringToFront();
+
+            btnTest.BringToFront();
+        }
+
+        private void hideInventoryBorder()
+        {
+            picInventoryBorder.Visible = false;
+            picPlayer.Visible = false;
+            lblPlayerName.Visible = false;
+            btnSaveTitle.Visible = false;
+            btnSaveExit.Visible = false;
+        }
+
+        private void btnSaveExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSaveTitle_Click(object sender, EventArgs e)
+        {
+            hideAll();
         }
     }
 }
